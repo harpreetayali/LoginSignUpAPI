@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetProfileActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profile_image_view_show"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/et_name_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorWhite"
+            android:hint="First Name"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawableTint="@color/colorWhite"
+            android:drawablePadding="5dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGrey"
+            android:inputType="textPersonName"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/et_email_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorWhite"
+            android:hint="abc@gmail.com"
+            android:drawableLeft="@drawable/ic_baseline_mail_24"
+            android:drawableTint="@color/colorWhite"
+            android:drawablePadding="5dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGrey"
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/et_mobile_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorWhite"
+            android:hint="987654321"
+            android:inputType="number"
+            android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+            android:drawableTint="@color/colorWhite"
+            android:drawablePadding="5dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGrey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/et_address_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPostalAddress"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorWhite"
+            android:hint="H.No."
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawableTint="@color/colorWhite"
+            android:drawablePadding="5dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorLightGrey"/>
+
+
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Edit Profile"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorOrange"/>
+    </LinearLayout>
+
+</LinearLayout>
